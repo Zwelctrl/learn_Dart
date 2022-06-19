@@ -12,6 +12,9 @@ class Figure {
   String shape = 'circle';
 }
 
+// *** Constructor works in a time before instance of that class is being output
+// *** Constructor can have a body in which the tasks to be fulfilled
+
 // older methods
 // class Student {
 //   Student(Figure head, Figure body, int hands, int legs) {
