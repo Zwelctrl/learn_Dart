@@ -57,3 +57,8 @@ void main() {
   print(multiply.x);
   print(divide.x);
 }
+
+~/ (similarity)
+  
+ print(10 ~/ 3); 
+// output => 3 (not 3.3333) 
