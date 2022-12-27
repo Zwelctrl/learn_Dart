@@ -147,6 +147,34 @@ void main() {
   print(ee);
 }
 
+// expand
+                  List a = [
+                    {"name": "Mg Mg"},
+                    ["Su Su"],
+                    ["Thwe Thwe"]
+                  ];
+
+                  
+                    print("Expand value is ${a.expand((element) {
+                      if (element is List) return element;
+
+                      try {
+                        List result = [];
+                        element.forEach((key, value) {
+                          result.add(value);
+                          result.add(key);
+                        });
+
+                        return result;
+                      } catch (e) {
+                        return [e];
+                      }
+                    }).toList()}");
+                  
+
+                  // expand is used to output a list which contains Map or Strings or int in it
+                  // output => [Mg Mg, name, Su Su, Thwe Thwe]
+
 /**
  * iterable == [] (or) {} 
  * 
